@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name's Profile</title>
+    <style>
+      /* Your CSS code here */
+      body {
+        font-family: "Garamond", sans-serif;
+        font-size: 18px;
+        background-color: #5a768b;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      h3 {
+        margin-bottom: 0;
+      }
+      h4 {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      /* P {
+        margin-top: 0;
+      } */
+
+      .profile-container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(35, 33, 44, 0.158);
+        text-align: left;
+      }
+
+      .profile-picture {
+        width: 150%; /* Horizontally longer profile picture */
+        max-width: 200px; /* Adjust as needed */
+        border-radius: 40%;
+        margin: 0 auto 20px;
+        display: block;
+      }
+
+      .profile-info {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center; /* Align items vertically */
+        justify-content: space-between; /* Add space between items */
+      }
+
+      .name {
+        font-size: 24px;
+        margin-left: 45px;
+        font-weight: bold;
+        color: #2d3236;
+      }
+
+      .contact-info {
+        margin-top: 10px;
+        margin-left: 45px;
+      }
+
+      .introduction {
+        margin-bottom: 20px;
+        margin-left: 45px;
+      }
+
+      .section-divider {
+        border-top: 1px solid #ccc;
+        margin: 20px 0;
+      }
+
+      .section-title {
+        font-size: 20px;
+        color: #2d3236;
+        margin-bottom: 10px;
+      }
+
+      .back-home {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profile-container">
+      <div class="profile-info">
+        <div>
+          <img
+            class="profile-picture"
+            src="C:\Users\user\Documents\▶webpage\profile_pic.jpg"
+            alt="Profile Picture"
+          />
+        </div>
+        <div>
+          <div class="name">Ji Hyun Kim</div>
+          <div class="contact-info">
+            <p>
+              LinkedIn:
+              <a href="linkedin.com/in/jihyunkim1620" target="_blank"
+                >linkedin.com/in/jihyunkim1620</a
+              >
+            </p>
+            <p>
+              Email:
+              <a href="mailto:jihyunkim1620@gmail.com"
+                >jihyunkim1620@gmail.com</a
+              >
+            </p>
+          </div>
+          <div class="introduction">
+            <p>
+              I am a graduate student pursing a master’s degree in computer
+              science at UVA with over 2 years of work experience in marketing
+              research. I am actively seeking summer internship opportunities as
+              a data scientist to leverage my diverse background and contribute
+              my unique blend of computer science knowledge and research
+              expertise.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <div class="back-home">
+        <a
+          href="file:///C:/Users/user/Documents/%E2%96%B6webpage/index.html"
+          onclick="goToHome()"
+          >Back to Home</a
+        >
+      </div>
+    </div>
+
+    <script>
+      function goToHome() {
+        window.location.href = "../index.html";
+      }
+    </script>
+  </body>
+</html>

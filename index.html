@@ -1,12 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio</title>
-</head>
-<body>
-  <p>Hello, World!</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Website Title</title>
+    <style>
+      /* Center the chatbox both horizontally and vertically */
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #192127;
+        height: 100vh;
+        margin: 0;
+      }
+
+      /* Style for the chatbot container */
+      #chatbox {
+        font-family: "Garamond", sans-serif;
+        font-size: 18px;
+        width: 400px; /* 2/3 of 600px */
+        height: 500px; /* Adjusted height */
+        padding: 20px;
+        background-color: #96c5ec;
+        border: 1px solid #5a768b;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(35, 33, 44, 0.158);
+        position: relative;
+      }
+
+      /* Styling for the chat messages */
+      .message-box {
+        font-size: 18px;
+        font-family: "Garamond", sans-serif;
+        margin-bottom: 10px;
+      }
+
+      /* Styling for the profile picture */
+      #profile-pic {
+        width: 50px;
+        height: auto; /* Set to 'auto' to maintain aspect ratio */
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      /* Styling for the options */
+      .options {
+        font-size: 18px;
+        font-family: "Garamond", sans-serif;
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      .option {
+        font-size: 18px;
+        font-family: "Garamond", sans-serif;
+        cursor: pointer;
+        padding: 8px;
+        margin: 5px;
+        border: 1px solid #192127;
+        background-color: #2d3236;
+        color: white;
+        border-radius: 4px;
+        display: inline-block;
+        width: 100px; /* Adjusted width */
+      }
+
+      /* Styling for the user input field and send button container */
+      #input-container {
+        font-size: 18px;
+        font-family: "Garamond", sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+        position: absolute;
+        bottom: 5%;
+        width: 95%;
+      }
+
+      #userInput {
+        font-size: 15px;
+        font-family: "Garamond", sans-serif;
+        width: calc(70% - 10px); /* Adjusted width */
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      button {
+        font-size: 18px;
+        font-family: "Garamond", sans-serif;
+        width: calc(30% - 10px); /* Adjusted width */
+        padding: 8px;
+        background-color: #96c5ec;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="chatbox">
+      <div class="message-box">
+        <img
+          id="profile-pic"
+          src="C:/Users/user/Documents/▶webpage/bot_pic.png"
+          alt="Profile Picture"
+        />
+        <p>
+          Welcome to Ji Hyun's website! To know more about me, please choose
+          from the options below.
+        </p>
+      </div>
+      <div class="options">
+        <div class="option" onclick="handleOption('profile')">Profile</div>
+        <div class="option" onclick="handleOption('education')">Education</div>
+        <div class="option" onclick="handleOption('work')">Work</div>
+      </div>
+      <div id="input-container">
+        <input
+          type="text"
+          id="userInput"
+          placeholder="Please choose from the options above"
+          disabled
+        />
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+
+    <script>
+      function handleOption(option) {
+        // Uncomment the line below if you want to log the selection in the chatbox
+        // addMessage("You selected: " + option);
+
+        // Redirect to the corresponding page based on the selected option
+        window.location.href = option + ".html"; // Adjust the file names as needed
+      }
+
+      function sendMessage() {
+        // Handle user input (if needed)
+      }
+    </script>
+  </body>
 </html>
