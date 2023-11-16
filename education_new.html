@@ -36,39 +36,25 @@
             background-color: #ddd;
             margin-bottom: 5px;
             transition: background-color 0.3s;
+            position: relative;
         }
-
-        nav ul li:hover {
-            background-color: #ccc;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: black;
-            display: block;
-            position: relative; /* Needed to position the triangle */
-        }
-        
-        nav ul li.active > a {
-            font-weight: bold;
+        nav ul li.active {
             background-color: #5a768b75; /* Highlight color for the active section */
         }
-        
+
+        nav ul li.active > a {
+            font-weight: bold;
+        }
+
         nav ul li.active > a::before {
             content: '▼';
             position: absolute;
             left: 0;
             top: 0;
-            padding: 10px; /* Adjust padding to center the triangle */
-            color: black; /* Color of the triangle */
+            padding: 10px;
+            color: black;
         }
-
-
-        nav ul li.active::after {
-            content: ' ▼';
-            float: right;
-        }
-
+        
         nav ul li ul {
             display: none;
             list-style-type: none;
