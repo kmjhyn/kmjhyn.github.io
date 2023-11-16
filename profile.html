@@ -14,7 +14,26 @@
         margin: 0;
         padding: 0;
       }
+      .top-nav {
+        background-color: #fff;
+        padding: 10px;
+        text-align: right;
+      }
 
+      .top-nav a {
+        text-decoration: none;
+        color: black;
+        margin-left: 15px;
+        font-weight: normal;
+      }
+
+      /* Highlight the current page */
+      .top-nav .current {
+        background-color: #5a768b;
+        color: white;
+        padding: 5px 10px;
+      }
+      
       h3 {
         margin-bottom: 0;
       }
@@ -86,6 +105,14 @@
     </style>
   </head>
   <body>
+    <div class="top-nav">
+      <a href="https://kmjhyn.github.io/index.html">HOME</a>
+      <a href="#" class="current">Profile</a> <!-- Current page -->
+      <a href="https://kmjhyn.github.io/education.html">Education</a>
+      <a href="https://kmjhyn.github.io/work.html">Work</a>
+    </div>
+
+    
     <div class="profile-container">
       <div class="profile-info">
         <div>
