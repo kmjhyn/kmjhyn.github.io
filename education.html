@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Name's Profile</title>
+    <title>Educational Background</title>
     <style>
-      /* Your CSS code here */
       body {
         font-family: 'Trebuchet MS', sans-serif;;
         font-size: 18px;
@@ -14,43 +13,38 @@
         margin: 0;
         padding: 0;
         display: flex;
+        flex-direction: column;
       }
-/* /* Styles for the menu */
-/*       .menu-bar {
-          width: 200px;
-          background-color: #f2f2f2;
-          padding: 10px;
-          box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-          height: 100vh;
-          position: fixed;
-      } */
-
-/*       .menu-bar ul {
-          list-style-type: none;
-          padding: 0;
+      .top-nav {
+        background-color: #fff;
+        padding: 10px;
+        text-align: right;
       }
 
-      .menu-bar ul li {
-          padding: 8px;
-          margin-bottom: 5px;
-          background-color: #ddd;
-          text-align: left;
+      .top-nav a {
+        text-decoration: none;
+        color: black;
+        margin-left: 15px;
+        font-weight: normal;
       }
 
-      .menu-bar ul li a {
-          text-decoration: none;
-          color: black;
-          display: block;
+      /* Highlight the current page */
+      .top-nav .current {
+        background-color: #5a768b;
+        color: white;
+        padding: 5px 10px;
       }
 
-      .menu-bar ul li.active {
-          background-color: #bbb;
+      .profile-container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(35, 33, 44, 0.158);
+        text-align: left;
       }
-
-      .menu-bar ul li.active a::after {
-          content: ' ✔'; */
-/*       } */
-/*       } */ */
       
       h3 {
         margin-bottom: 0;
@@ -59,9 +53,6 @@
         margin-top: 0;
         margin-bottom: 0;
       }
-      /* P {
-        margin-top: 0;
-      } */
 
       .profile-container {
         max-width: 800px;
@@ -108,18 +99,16 @@
     </style>
   </head>
   <body>
-    <!-- Menu Bar -->
-<!--     <div class="menu-bar">
-        <ul>
-            <li><a href="https://kmjhyn.github.io/index.html">Back to Home</a></li>
-            <li><a href="https://kmjhyn.github.io/profile.html">Profile</a></li>
-            <li class="active"><a href="#">Education</a></li>
-            <li><a href="https://kmjhyn.github.io/work.html">Work</a></li>
-        </ul>
+    <div class="top-nav">
+      <a href="https://kmjhyn.github.io/index.html">HOME</a>
+      <a href="https://kmjhyn.github.io/profile.html">Profile</a>
+      <a href="#" class="current">Education</a> <!-- Current page -->
+      <a href="https://kmjhyn.github.io/work.html">Work</a>
     </div>
- -->
-    <!-- Profile Container -->
     
+    <div class="profile-container">
+      <div class="name">Educational Background</div>
+
     <div class="profile-container">
         <div class="name">Educational Background</div>
   
