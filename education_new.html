@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name's Profile</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Trebuchet MS', sans-serif;
+            font-size: 18px;
+            background-color: #eaeaea;
+            display: flex;
+        }
+
+        nav {
+            width: 200px;
+            background-color: #f2f2f2;
+            height: 100vh;
+            position: fixed;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            padding-top: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            padding: 10px;
+            background-color: #ddd;
+            margin-bottom: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li:hover {
+            background-color: #ccc;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            display: block;
+        }
+
+        nav ul li.active > a {
+            font-weight: bold;
+        }
+
+        nav ul li.active::after {
+            content: ' ▼';
+            float: right;
+        }
+
+        nav ul li ul {
+            display: none;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li.active ul {
+            display: block;
+            padding-left: 20px;
+        }
+
+        nav ul li ul li {
+            background-color: #eee;
+            margin-bottom: 2px;
+        }
+
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+            width: calc(100% - 220px);
+        }
+
+        .section {
+            background-color: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .section p,
+        .section ul {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu-bar">
+        <ul>
+            <li><a href="https://kmjhyn.github.io/index.html">Back to Home</a></li>
+            <li><a href="https://kmjhyn.github.io/profile.html">Profile</a></li>
+            <li class="active">
+                <a href="#">Education</a>
+                <ul>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#online-learning">Online Learning/Non-Degree Courses</a></li>
+                </ul>
+            </li>
+            <li><a href="https://kmjhyn.github.io/work.html">Work</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <section id="education" class="section">
+            <h2>Educational Background</h2>
+            <article>
+                <h3>University of Virginia, 2025</h3>
+                <h4>M.S., in Computer Science</h4>
+                <p>
+                    Coursework:<br />
+                    Machine Learning, Computational Behavior Modeling, Risk and Benefits of Generative AI and LLMs, Human Computer Interaction
+                </p>
+                <p>
+                    Currently Working Projects:<br />
+                    1. Implementing various machine learning algorithms (including Logistic Regression, Decision Tree, Boosting, Cross Validation, and SVM) and neural network on MNIST dataset<br />
+                    2. Behavior Based Interactive Multi-Agents Robot Algorithms in Complex Environment. Implementing 3 levels of algorithm, (i) non-coordinated, yet decentralized robots (ii) coordinately working algorithm (iii) adaptive algorithm. Focus on the first non-coordinated yet decentralized algorithm, Token-Passing algorithm.<br />
+                    3. Redesigning mHealth app and conducting user studies
+                </p>
+            </article>
+
+            <article>
+                <h3>Ewha Womans University, Aug. 2021</h3>
+                <h4>B.A., in German Language and Literature and International Studies</h4>
+                <p>
+                    Additional details about your education at Ewha Womans University can be listed here.
+                </p>
+            </article>
+        </section>
+
+        <section id="online-learning" class="section">
+            <h2>Online Learning/Non-Degree Courses</h2>
+            <article>
+                <h3>National Institute for Lifelong Education, Jan. 2023 – May 2023</h3>
+                <h4>Courses on Computer Engineering</h4>
+                <p>
+                    Coursework:<br />
+                    Data Structures, Computer Systems, Discrete Mathematics
+                </p>
+                <h3>Udemy Courses</h3>
+                <p>
+                    100 Days of Code: The Complete Python Pro Bootcamp for 2023<br />
+                    Complete Machine Learning and Data Science Bootcamp 2023<br />
+                    Linear Algebra for Data Science and Machine Learning A-Z 2023
+                </p>
+                <h3>Company Online Education Courses</h3>
+                <p>
+                    Ipsos training center lectures in basic statistics and data analysis methods
+                </p>
+            </article>
+        </section>
+    </div>
+</body>
+</html>
