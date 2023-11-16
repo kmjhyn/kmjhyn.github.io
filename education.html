@@ -62,12 +62,19 @@
         margin: 20px auto; /* Add space between the sections */
         padding: 20px;
         box-shadow: 0 0 10px rgba(35, 33, 44, 0.158);
-        max-width: 800px; 
+        max-width: 800px;
+        text-align: left;
+      }
+      .centered-text {
+        text-align: center; /* Center text for h1 to h4 */
       }
 
+      .section h1, .section h2, .section h3, .section h4 {
+        margin: auto; /* Center these elements */
+        display: block;
+      }
 
-
-      .name {
+/*       .name {
         font-size: 24px;
         margin-left: 30%;
         margin-right:30%;
@@ -93,7 +100,7 @@
       mark { 
         background-color: #5a768b75;
         color: rgb(0, 0, 0);
-      }
+      } */
 
       .back-home {
         margin-top: 20px;
@@ -108,31 +115,34 @@
       <a href="https://kmjhyn.github.io/work.html">Work</a>
     </div>
 
-    <div class="profile-container">
-        <div class="name">Educational Background</div>
+<!--     <div class="profile-container">
+        <div class="name">Educational Background</div> -->
   
 <!--     
       <div class="section-divider"></div> -->
 
-      <div class="section">
-        <div class="section-title"><mark>Education</mark></div>
+      <div class="section centered-text">
+        <h1>Educational Background</h1>
+        <h2>Education</h2>
         <h3>University of Virginia, 2025</h3>
         <h4>M.S., in Computer Science</h4>
+      </div>
 
-          <p>
-            Coursework: <br />Machine Learning, Computational Behavior Modeling,
-            Risk and Benefits of Generative AI and LLMs, Human Computer
-            Interaction
-          </p>
-          <p>
-            Currently Working Projects: <br />1. Implementing various machine
-            learning algorithms(including Logistic Regression, Decision Tree,
-            Boosting, Cross Validation, and SVM) and neural network on MNIST
-            dataset <br />2. Behavior Based Interactive Multi-Agents Robot Algorithms in Complex Environment.<br /> Implementing 3 levels of algorithm, (i) non-coordinated, yet decentralized robots (ii) coordinately working algorithm (iii) adaptive algorithm.
-            <br /> Focus on the first non-coordinated yet decentralized algorithm, Token-Passing algorithm. <br />3.
-            Redesigning mHealth app and conducting user studies
-          </p>
-        
+      <div class="section">
+        <p>
+          Coursework: <br />Machine Learning, Computational Behavior Modeling,
+          Risk and Benefits of Generative AI and LLMs, Human Computer
+          Interaction
+        </p>
+        <p>
+          Currently Working Projects: <br />1. Implementing various machine
+          learning algorithms(including Logistic Regression, Decision Tree,
+          Boosting, Cross Validation, and SVM) and neural network on MNIST
+          dataset <br />2. Behavior Based Interactive Multi-Agents Robot Algorithms in Complex Environment.<br /> Implementing 3 levels of algorithm, (i) non-coordinated, yet decentralized robots (ii) coordinately working algorithm (iii) adaptive algorithm.
+          <br /> Focus on the first non-coordinated yet decentralized algorithm, Token-Passing algorithm. <br />3.
+          Redesigning mHealth app and conducting user studies
+        </p>
+      
 <!--         </div>
         <div> -->
           <h3>Ewha Womans University, Aug. 2021</h3>
