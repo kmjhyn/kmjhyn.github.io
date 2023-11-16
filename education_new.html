@@ -46,11 +46,23 @@
             text-decoration: none;
             color: black;
             display: block;
+            position: relative; /* Needed to position the triangle */
         }
-
+        
         nav ul li.active > a {
             font-weight: bold;
+            background-color: #5a768b75; /* Highlight color for the active section */
         }
+        
+        nav ul li.active > a::before {
+            content: '▼';
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 10px; /* Adjust padding to center the triangle */
+            color: black; /* Color of the triangle */
+        }
+
 
         nav ul li.active::after {
             content: ' ▼';
