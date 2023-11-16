@@ -38,6 +38,15 @@
             transition: background-color 0.3s;
             position: relative;
         }
+
+        nav ul li a,
+        nav ul li a:visited { /* This will target both unvisited and visited links */
+            text-decoration: none;
+            color: black; /* Ensuring text is black for all link states */
+            display: block;
+        }
+
+        
         nav ul li.active {
             background-color: #5a768b75; /* Highlight color for the active section */
         }
