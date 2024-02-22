@@ -144,20 +144,18 @@
       }
 
 
-      function seeFile()  {
+      function seeFile(option) {
         if (option === 'resume') {
-          // Trigger file download
           var a = document.createElement('a');
-          a.href = 'https://myuva-my.sharepoint.com/:b:/g/personal/mqa4qu_virginia_edu/EZzb-OUSwMZOjT4uP8XrOSIBbN721Ud89hPPh_QGaxN5lg?e=ROainZ'; // URL
-          a.download = 'JiHyunKim_resume.pdf'; // The default filename for downloading
-          document.body.appendChild(a); // Append the anchor to the body
-          a.click(); // Simulate click on the anchor
-          document.body.removeChild(a); // Remove the anchor from the body
-        } else {
-          // If not downloading resume, redirect to another page
-          window.location.href = 'https://myuva-my.sharepoint.com/:b:/g/personal/mqa4qu_virginia_edu/EZzb-OUSwMZOjT4uP8XrOSIBbN721Ud89hPPh_QGaxN5lg?e=ROainZ';
+          a.href = 'https://myuva-my.sharepoint.com/:b:/g/personal/mqa4qu_virginia_edu/EZzb-OUSwMZOjT4uP8XrOSIBbN721Ud89hPPh_QGaxN5lg?e=ROainZ'; // SharePoint URL
+          // Attempt to trigger file download (Note: this might not work as expected due to SharePoint behavior)
+          a.target = '_blank'; // Open in new tab as fallback
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
         }
       }
+
 
       
       function sendMessage() {
