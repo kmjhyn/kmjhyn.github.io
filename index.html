@@ -121,6 +121,7 @@
         <div class="option" onclick="handleOption('profile')">Profile</div>
         <div class="option" onclick="handleOption('education')">Education</div>
         <div class="option" onclick="handleOption('work')">Work</div>
+        <div class="option" onclick="seeFile('resume')">Resume</div>        
       </div>
       <div id="input-container">
         <input
@@ -142,6 +143,23 @@
         window.location.href = option + ".html"; // Adjust the file names as needed
       }
 
+
+      function seeFile()  {
+        if (option === 'resume') {
+          // Trigger file download
+          var a = document.createElement('a');
+          a.href = 'https://myuva-my.sharepoint.com/:b:/r/personal/mqa4qu_virginia_edu/Documents/Web_files/JiHyunKim_resume_1.pdf?csf=1&web=1&e=uJFjvc'; // URL
+          a.download = 'JiHyunKim_resume.pdf'; // The default filename for downloading
+          document.body.appendChild(a); // Append the anchor to the body
+          a.click(); // Simulate click on the anchor
+          document.body.removeChild(a); // Remove the anchor from the body
+        } else {
+          // If not downloading resume, redirect to another page
+          window.location.href = option + ".html";
+        }
+      }
+
+      
       function sendMessage() {
         // if activate user input
       }
